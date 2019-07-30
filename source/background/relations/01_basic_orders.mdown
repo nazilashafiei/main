@@ -43,14 +43,14 @@ For example, we may have the set of natural numbers with the *strictly less than
 We can think of these as structures where the set specifies the collection of building blocks and the relation connects these building blocks, putting them into a particular structural configuration.
 Suppose we have some structure along those lines, consisting of a set $D$ and a relation $R$.
 We can move through this structure with $R$: if we are at $a \in D$, we can move to any $b$ such that $a \mathrel{R} b$.
-And from $b$, we can move on to any $c$ such that $b R c$, and so on.
+And from $b$, we can move on to any $c$ such that $b \mathrel{R} c$, and so on.
 
 \begin{example}
-From the natural number $5$, we can move to $17$ via $\leq$, and from there to $329$.
+From the natural number $5$, we can move to $17$ via $<$, and from there to $329$.
 \end{example}
 
 Some relations are such that whatever can be reached in two steps can also be reached in one step.
-So $a R b$ and $b R c$ entail that we also have $a R c$ --- the ability to move from $a$ to $c$ via $b$ implies that we can move directly from $a$ to $c$ without a stop at $b$.
+So $a \mathrel{R} b$ and $b \mathrel{R} c$ entail that we also have $a \mathrel{R} c$ --- the ability to move from $a$ to $c$ via $b$ implies that we can move directly from $a$ to $c$ without a stop at $b$.
 Such relations are called *transitive*.
 
 \begin{definition}
@@ -96,7 +96,7 @@ But then, again by transitivity, we must also have $a \mathrel{R} d$ because of 
 Since we can apply the same argument over and over again, anything that can be reached with a finite number of steps can also be reached in a single step.
 
 It is also important to keep in mind that some relations can be trivially transitive, such as the relation below.
-Here there are no $a$, $b$, and $c$ such that we have both $a R b$ and $b R c$, so transitivity holds trivially because we cannot produce any counterexample to the claim that the relation is transitive.
+Here there are no $a$, $b$, and $c$ such that we have both $a \mathrel{R} b$ and $b \mathrel{R} c$, so transitivity holds trivially because we cannot produce any counterexample to the claim that the relation is transitive.
 
 \input_large{./transitivity_trivial.tikz}
 
@@ -128,7 +128,7 @@ Or in other words, a relation is antisymmetric if it avoids as much symmetry as 
 
 \begin{definition}
 Let $R$ be a relation over $D$.
-Then $R$ is *antisymmetric* iff $a R b$ and $b R a$ joinlty imply $a = b$ for all $a, b \in D$.
+Then $R$ is *antisymmetric* iff $a \mathrel{R} b$ and $b \mathrel{R} a$ joinlty imply $a = b$ for all $a, b \in D$.
 \end{definition}
 
 \begin{example}
