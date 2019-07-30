@@ -1,6 +1,6 @@
 # Tuples: Basics
 
-Tuples are similar to strings in that they care a built from a set of elements and care about both order and numerosity.
+Tuples are similar to strings in that they are built from a set of elements and care about both order and numerosity.
 An $n$-tuple consists of exactly $n$ elements.
 Tuples are usually written between pointy brackets, e.g. $\tuple{a,b}$.
 
@@ -45,7 +45,7 @@ Tuple concatenation is not commutative.
 Illustrate this with an example.
 \end{exercise}
 
-Mirror $\emptystring$ for strings, there is also the empty tuple $\tuple{}$.
+Mirroring $\emptystring$ for strings, there is also the empty tuple $\tuple{}$.
 It is the only 0-tuple.
 
 \begin{exercise}
@@ -57,5 +57,5 @@ Compute $\tuple{a} \tuplecat \tuple{}$ and $\tuple{} \tuplecat \tuple{a,a,a}$.
 
 - Tuples are similar to strings.
   In fact, strings are often defined as just a shorthand notation for tuples.
-- Like strings, tuples are ordered ($\tuple{a,b} \neq \tuple{b,a}$) but not idempotent ($\tuple{a} \neq \tuple{a,a}$).
+- Like strings, tuples are ordered ($\tuple{a,b} \neq \tuple{b,a}$), but not idempotent ($\tuple{a} \neq \tuple{a,a}$).
 - Tuples can be concatenated as usual.
